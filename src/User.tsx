@@ -1,5 +1,6 @@
 import { IconBrandGithub, IconBrandInstagram, IconBrandLeetcode, IconBrandLinkedin } from "@tabler/icons-react";
 import chatApp from "./assets/project-images/chat.png";
+import regenItek from "./assets/project-images/regen-itek.jpg";
 import dashboard from "./assets/project-images/dashboard.png";
 import youtube from "./assets/project-images/youtube.jpg";
 import google from "./assets/project-images/google.jpg";
@@ -35,7 +36,9 @@ import MongoDBCompass from "./assets/icons/MongoDBCompass.png";
 import Firebase from "./assets/icons/Firebase.png";
 import FramerMotion from "./assets/icons/FramerMotion.png";
 
-import Company from "./assets/icons/Company.jpeg";
+import NewowlAI from "./assets/icons/Company.jpeg";
+import Storylinez from "./assets/icons/Storylinez.png";
+import SyncInterns from "./assets/icons/SyncInterns.png";
 
 
 const Info = {
@@ -52,6 +55,15 @@ const ProjectInfo = [
         live: true,
         technologies: ["React", "Node.js", "Socket.IO", "Express.js", "MongoDB", "Styled Components"],
         link: "https://snappy-chat-application.netlify.app/",
+        github: "https://github.com/Code-Mars/Ekart/"
+    },
+    {
+        title: "Regen ITEK",
+        desc: "Regen ITEK is a staffing and recruitment firm for which I freelanced the development of a modern, responsive website using Next.js, TypeScript, and Tailwind CSS. The site features smooth UI transitions and animations powered by Framer Motion, enhancing the overall user experience. I integrated Calendly for seamless meeting scheduling and used Resend to manage email services efficiently.",
+        image: regenItek,
+        live: true,
+        technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+        link: "https://regenitek.com",
         github: "https://github.com/Code-Mars/Ekart/"
     },
     {
@@ -74,7 +86,7 @@ const ProjectInfo = [
     },
     {
         title: "Guido",
-        desc: "Guido is a full-stack web application that allows users to track their travel experiences and share them with others. The front end is built with React, Bootstrap, while the back end uses Node.js, Express, and PostgresSQL. Users can create an account, log in, add new trips, and view their past trips on a map. The app features a clean, modern design with interactive maps and a user-friendly interface. Travel Tracker combines functionality with style, making it easy and enjoyable to record and share travel memories.",
+        desc: "Developed and deployed a responsive tourism website for Guido, a Mumbai-based travel company, enhancing user  experience for both local and international travelers. Integrated an AI chatbot to guide users, boosting engagement and support efficiency. Managed end-to-end deployment on GoDaddy, including domain setup, hosting, and SSL configuration.",
         image: guido,
         live: true,
         technologies: ["JavaScript", "jQuery", "Bootstrap", "HTML"],
@@ -163,7 +175,7 @@ const SkillInfo = [
 
 const socialLinks = [
     { link: "https://github.com/Aaryan-02", icon: IconBrandGithub },
-    { link: "https://www.linkedin.com/in/aaryan-pinto   ", icon: IconBrandLinkedin },
+    { link: "https://www.linkedin.com/in/aryan-pinto   ", icon: IconBrandLinkedin },
     { link: "https://www.instagram.com/aryan_p_02/", icon: IconBrandInstagram }, 
     { link: "https://www.geeksforgeeks.org/user/imaryan32/", icon: IconBrandLeetcode }
 ];
@@ -171,12 +183,28 @@ const socialLinks = [
 
 const ExperienceInfo = [
     {
+        role: "Software Engineer(Frontend)",
+        company: "Storylinez",
+        image: Storylinez,
+        date: "Jan 2025 - Apr 2025",
+        desc: "Developed a performant AI Video Ad Production platform using ReactJS, Tailwind CSS and Shadcn contributing to  onboarding 20-25 clients. Implemented Redux with Redux Persist for state management and session persistence. Integrated Clerk for social authentication,reducing user onboarding time by 30%. Collaborated with backend and AI/ML teams, accelerating feature delivery by 40%. Deployed production builds via AWS S3, ensuring scalability and uptime. Boosted performance by 50% through image optimization, lazy loading, and debouncing.",
+        skills: ["React JS", "Tailwind CSS", "Shadcn", "Redux", "Git", "Clerk", "Recharts", "Curl"]
+    },
+    {
         role: "Frontend Developer",
         company: "NewOwl AI",
-        image: Company,
+        image: NewowlAI,
         date: "July 2024 - Nov 2024",
         desc: "Crafted complex user interfaces using ReactJS, CSS, Material UI, and Recharts, with a strong focus on design consistency, responsiveness, and a seamless user experience. Collaborated with cross-functional teams to translate Figma designs into pixel-perfect ReactJS code, authoring over 50 reusable components and pages. Integrated RESTful APIs and implemented React Tanstack Query to enhance data fetching efficiency and overall application performance. Utilized Git for version control, collaborating with a team of five developers to manage codebase changes and ensure a smooth project workflow.",
         skills: ["React JS", "Material UI", "Postman", "Git", "Recharts", "React Tanstack Query"]
+    },
+    {
+        role: "SDE Intern",
+        company: "Sync Intern's",
+        image: SyncInterns,
+        date: "Mar 2023 - Apr 2023",
+        desc: "Developed and deployed a responsive tourism website for Guido(https://guido.co.in), a Mumbai-based travel company, enhancing user experience for both local and international travelers. Integrated an AI chatbot to guide users, boosting engagement and support efficiency. Managed end-to-end deployment on GoDaddy, including domain setup, hosting, and SSL configuration.",
+        skills: ["Bootstrap", "JavaScript", "jQuery" ]
     }
 ]
 const Slugs = [
@@ -192,7 +220,7 @@ const Slugs = [
     "html5",
     "css3",
     "mongodb",
-    "selenium",
+    // "selenium",
     "nodedotjs",
     "express",
     "nextdotjs",
