@@ -1,8 +1,11 @@
 import { ActionIcon, Modal, ScrollArea, Tooltip, useMatches } from "@mantine/core";
 import { IconArrowBigDownLineFilled } from "@tabler/icons-react";
 import { Document, Page, pdfjs } from "react-pdf";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Info } from "../User";
+
+// Set the workerSrc property to the PDF.js worker CDN
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
 
 const ResumeViewer = (props: any) => {
     const [numPages, setNumPages] = useState<number | null>(null);
@@ -52,6 +55,8 @@ const ResumeViewer = (props: any) => {
                         className="w-full !rounded-2xl !overflow-hidden !min-w-40 !min-h-14" 
                         file="/Resume.pdf"
                         onLoadSuccess={onDocumentLoadSuccess}
+                        loading="Loading resume..."
+                        error="An error occurred while loading the PDF. Please try downloading instead."
                     >
                         {Array.from(new Array(numPages || 0), (_, index) => (
                             <Page
